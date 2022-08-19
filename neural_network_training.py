@@ -5,7 +5,7 @@
 
 
 import numpy as np
-fname = 'assign1_data.csv'
+fname = 'neural_network_training.csv'
 data = np.genfromtxt(fname, dtype='float', delimiter=',', skip_header=1)
 X, y = data[:, :-1], data[:, -1].astype(int)
 X_train, y_train = X[:400], y[:400]
